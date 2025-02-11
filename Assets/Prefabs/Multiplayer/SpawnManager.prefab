@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3360735684923686405
+--- !u!1 &390480439274037851
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,45 +8,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3360735684923686404}
-  - component: {fileID: 3780071474100152528}
-  - component: {fileID: 3360735684923686407}
+  - component: {fileID: 1250401137145544601}
+  - component: {fileID: 5325219411207614858}
+  - component: {fileID: 6889197669513942426}
   m_Layer: 0
-  m_Name: prefab_NetworkObjectPool
-  m_TagString: NetworkObjectPool
+  m_Name: SpawnManager
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3360735684923686404
+--- !u!4 &1250401137145544601
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3360735684923686405}
+  m_GameObject: {fileID: 390480439274037851}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 189.26674, y: -36.126976, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3780071474100152528
+--- !u!114 &5325219411207614858
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3360735684923686405}
+  m_GameObject: {fileID: 390480439274037851}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 148391963
-  InScenePlacedSourceGlobalObjectIdHash: 3074998974
+  GlobalObjectIdHash: 1088050920
+  InScenePlacedSourceGlobalObjectIdHash: 2148503479
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
@@ -54,26 +54,21 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
---- !u!114 &3360735684923686407
+--- !u!114 &6889197669513942426
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3360735684923686405}
+  m_GameObject: {fileID: 390480439274037851}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2e48fbd6d33eab48807525003196759, type: 3}
+  m_Script: {fileID: 11500000, guid: aee92ae1c092acc4ba1ef740d4c22d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PooledPrefabsList:
-  - Prefab: {fileID: 2340235652485976276, guid: 9f004bf974a772d4db6aedc78554fe74, type: 3}
-    PrewarmCount: 10
-  - Prefab: {fileID: 6493235709534691914, guid: e5dbba1d2d2efd047b94337bfce785ac, type: 3}
-    PrewarmCount: 10
-  - Prefab: {fileID: 6998406981985524021, guid: 1b76139a366aa7f4e9fb4f7ca30e2770, type: 3}
-    PrewarmCount: 10
-  - Prefab: {fileID: 6552242989554785059, guid: b7ddf2b51da61384fb2591b80066f3a0, type: 3}
-    PrewarmCount: 10
-  - Prefab: {fileID: 7748802284409670430, guid: 9d6c3c37fa39b7d409c6e5ccdf0d51ef, type: 3}
-    PrewarmCount: 10
+  _waves:
+  - {fileID: 11400000, guid: df644b73946210d41befb3376d16398c, type: 2}
+  spawnPoint: {fileID: 0}
+  _enemyPrefab: {fileID: 1839265248126582435, guid: 67ac742e4726057479d373a9bb19a38d, type: 3}
+  _timeBetweenWaves: 50
+  _timeBetweenEnemies: 2
