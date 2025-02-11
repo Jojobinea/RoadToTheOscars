@@ -27,7 +27,6 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other){
         if(other.CompareTag("Enemy")){
-            Debug.Log("coliudsiu");
             target = other.transform;
             StartCoroutine(ShootRoutine());
         }
@@ -52,10 +51,12 @@ public class PlayerController : MonoBehaviour
         if (_projectilePrefab != null && _firePoint != null)
         {
             GameObject projectile = Instantiate(_projectilePrefab, _firePoint.position, Quaternion.identity);
-            Rigidbody rb = projectile.GetComponent<Rigidbody>();
+            Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
+            
             if (rb != null)
             {
-                Vector3 direction = (target.position - _firePoint.position).normalized;
+                Vector2 direction = (target.position - _firePoint.position).normalized;
+                
                 rb.velocity = direction * projectileSpeed; // Atira na direção do inimigo
             }
         }
