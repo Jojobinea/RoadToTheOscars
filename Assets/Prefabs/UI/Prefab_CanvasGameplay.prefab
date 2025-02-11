@@ -118,8 +118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 3211966425
-  InScenePlacedSourceGlobalObjectIdHash: 0
+  GlobalObjectIdHash: 1180516473
+  InScenePlacedSourceGlobalObjectIdHash: 2787522322
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
@@ -685,6 +685,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5624656289840033431}
     m_Modifications:
+    - target: {fileID: 80192180420475422, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      propertyPath: m_Name
+      value: Triangle
+      objectReference: {fileID: 0}
+    - target: {fileID: 411915601579525437, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      propertyPath: m_Name
+      value: Circle
+      objectReference: {fileID: 0}
+    - target: {fileID: 466725023843941181, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      propertyPath: m_Name
+      value: Algo
+      objectReference: {fileID: 0}
+    - target: {fileID: 657302620615474456, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      propertyPath: m_text
+      value: 'Triangulo
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872362361743447163, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      propertyPath: m_text
+      value: 'Circulo
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 2248507829694973402, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -769,13 +793,235 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_PainelGameplay
       objectReference: {fileID: 0}
+    - target: {fileID: 4939937683198231367, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939937683198231367, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939937683198231367, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939937683198231367, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectTower
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939937683198231367, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SpawnController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939937683198231367, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939937683198231367, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5767261108091723247, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      propertyPath: m_text
+      value: Algo
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204015787590817070, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      propertyPath: m_text
+      value: 'Quadrado
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564078620005209684, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      propertyPath: m_Name
+      value: Square
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 466725023843941181, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 771875052170123703}
+    - targetCorrespondingSourceObject: {fileID: 466725023843941181, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4852183172415505422}
+    - targetCorrespondingSourceObject: {fileID: 80192180420475422, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3347571527750336790}
+    - targetCorrespondingSourceObject: {fileID: 80192180420475422, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5273370420751128324}
+    - targetCorrespondingSourceObject: {fileID: 411915601579525437, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4884596088462733356}
+    - targetCorrespondingSourceObject: {fileID: 411915601579525437, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4151524634099174049}
+    - targetCorrespondingSourceObject: {fileID: 7564078620005209684, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 892187449610898749}
   m_SourcePrefab: {fileID: 100100000, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+--- !u!1 &2040064262939981456 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7564078620005209684, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+  m_PrefabInstance: {fileID: 8410123547687002308}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &892187449610898749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040064262939981456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc6671669e50a7d42a1d22e21f50f8b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pressedColor: {r: 0.7137255, g: 0.7137255, b: 0.7137255, a: 1}
 --- !u!224 &7746911796600988958 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2248507829694973402, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
   m_PrefabInstance: {fileID: 8410123547687002308}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8142976245317953017 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 411915601579525437, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+  m_PrefabInstance: {fileID: 8410123547687002308}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4884596088462733356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8142976245317953017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: SpawnController, Assembly-CSharp
+          m_MethodName: SelectTower
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &4151524634099174049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8142976245317953017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc6671669e50a7d42a1d22e21f50f8b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pressedColor: {r: 0.7137255, g: 0.7137255, b: 0.7137255, a: 1}
+--- !u!1 &8272234149151562745 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 466725023843941181, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+  m_PrefabInstance: {fileID: 8410123547687002308}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &771875052170123703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8272234149151562745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: SpawnController, Assembly-CSharp
+          m_MethodName: SelectTower
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &4852183172415505422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8272234149151562745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc6671669e50a7d42a1d22e21f50f8b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pressedColor: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
+--- !u!1 &8478629458678504154 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 80192180420475422, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+  m_PrefabInstance: {fileID: 8410123547687002308}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3347571527750336790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8478629458678504154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: SpawnController, Assembly-CSharp
+          m_MethodName: SelectTower
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &5273370420751128324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8478629458678504154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc6671669e50a7d42a1d22e21f50f8b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pressedColor: {r: 0.7137255, g: 0.7137255, b: 0.7137255, a: 1}
