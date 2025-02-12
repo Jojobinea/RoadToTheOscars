@@ -26,6 +26,8 @@ public class EnemyController : NetworkBehaviour
 
     void Update()
     {
+        if(!IsServer) return;
+            
         if (_coroutineAllowed)
         {
             StartCoroutine(GoByTheRoute());
@@ -58,8 +60,8 @@ public class EnemyController : NetworkBehaviour
         }
 
         _tParam = 0;
-
         _coroutineAllowed = true;
+        NetworkObject.Despawn();
     }
 
     private Vector3 CalculateBezierPoint(float t, Vector3[] points)

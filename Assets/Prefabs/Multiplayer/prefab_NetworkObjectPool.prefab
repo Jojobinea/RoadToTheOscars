@@ -77,3 +77,11 @@ MonoBehaviour:
     PrewarmCount: 10
   - Prefab: {fileID: 7748802284409670430, guid: 9d6c3c37fa39b7d409c6e5ccdf0d51ef, type: 3}
     PrewarmCount: 10
+  - Prefab: {fileID: 7492526206557572177, guid: 2341c55eca2abce45a191b5aab59df42, type: 3}
+    PrewarmCount: 10
+  - Prefab: {fileID: 7982032133783250920, guid: 39c6f6d6564fe234f9d9b800b36099a2, type: 3}
+    PrewarmCount: 10
+  - Prefab: {fileID: 2579300299449438130, guid: 307409683d8d7ae4d81ef2c12a4795d4, type: 3}
+    PrewarmCount: 10
+  - Prefab: {fileID: 2346811059624779686, guid: b873e313e46e5b245a5e9e997d3f06b0, type: 3}
+    PrewarmCount: 10

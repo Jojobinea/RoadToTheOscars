@@ -72,6 +72,8 @@ GameObject:
   m_Component:
   - component: {fileID: 334944316999646987}
   - component: {fileID: 8240013627280714661}
+  - component: {fileID: 6597090127419521331}
+  - component: {fileID: 1660889092363501727}
   m_Layer: 0
   m_Name: Prefab_EnemyRoute
   m_TagString: Route
@@ -122,6 +124,83 @@ MonoBehaviour:
   - {fileID: 7419756593946815526}
   - {fileID: 3290689305183201693}
   resolution: 50
+--- !u!60 &6597090127419521331
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4912183348451285512}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -5.84041, y: 3.3867683}
+      - {x: -11.995847, y: 3.364298}
+      - {x: -11.964655, y: 2.0047016}
+      - {x: -2.7902868, y: 1.1623611}
+      - {x: -0.3486277, y: -0.14924419}
+      - {x: 2.0521126, y: -2.457894}
+      - {x: 14.339236, y: -3.0205317}
+      - {x: 14.540431, y: -1.4827609}
+      - {x: 2.927286, y: -1.1369723}
+      - {x: 1.3894126, y: 0.8473425}
+      - {x: -0.8686619, y: 2.7250304}
+  m_UseDelaunayMesh: 0
+--- !u!114 &1660889092363501727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4912183348451285512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 0
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
 --- !u!1 &5961064471982237480
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8966904324638167760}
+  - component: {fileID: 2763135683699496051}
   - component: {fileID: 4950099145405557132}
   m_Layer: 0
   m_Name: TroopsManager
@@ -32,6 +33,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2763135683699496051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8775324735979165511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 0
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
 --- !u!114 &4950099145405557132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45,9 +67,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 7492526206557572177, guid: 2341c55eca2abce45a191b5aab59df42, type: 3}
+  - {fileID: 7982032133783250920, guid: 39c6f6d6564fe234f9d9b800b36099a2, type: 3}
+  - {fileID: 2579300299449438130, guid: 307409683d8d7ae4d81ef2c12a4795d4, type: 3}
+  - {fileID: 2346811059624779686, guid: b873e313e46e5b245a5e9e997d3f06b0, type: 3}
   spawnActor: {fileID: 8966904324638167760}
-  _collider: {fileID: 0}
