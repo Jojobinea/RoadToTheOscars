@@ -49,7 +49,7 @@ public class TroopSpawnerController : NetworkBehaviour
         //Detect when mouse is clicked (first touch clicked)
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("test");
+            //Debug.Log("test");
             //get the world space postion of the mouse
             var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Debug.Log(mousePos);
@@ -79,7 +79,7 @@ public class TroopSpawnerController : NetworkBehaviour
         }
         else
         {
-            Debug.Log("proibido spawnar");
+            //Debug.Log("proibido spawnar");
         }
     }
 
@@ -100,7 +100,7 @@ public class TroopSpawnerController : NetworkBehaviour
         }
         else
         {
-            Debug.Log("proibido spawnar");
+            //Debug.Log("proibido spawnar");
         }
     }
 
@@ -121,10 +121,10 @@ public class TroopSpawnerController : NetworkBehaviour
     {
         if (_routeCollider.OverlapPoint(mousePos))
         {
-            Debug.Log("clidiu");
+            //Debug.Log("clidiu");
             return true;
         }
-        Debug.Log("nao colidiu");
+        //Debug.Log("nao colidiu");
         return false;
     }
 

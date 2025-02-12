@@ -332,6 +332,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_NetworkObjectPool
       objectReference: {fileID: 0}
+    - target: {fileID: 3360735684923686407, guid: 77b00c955a3609b448b378623d678dcb, type: 3}
+      propertyPath: PooledPrefabsList.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3360735684923686407, guid: 77b00c955a3609b448b378623d678dcb, type: 3}
+      propertyPath: PooledPrefabsList.Array.data[9].Prefab
+      value: 
+      objectReference: {fileID: 4921198814046341087, guid: 9bd6cd2c07b65ea41ab63475d208dd3b, type: 3}
+    - target: {fileID: 3360735684923686407, guid: 77b00c955a3609b448b378623d678dcb, type: 3}
+      propertyPath: PooledPrefabsList.Array.data[9].PrewarmCount
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3780071474100152528, guid: 77b00c955a3609b448b378623d678dcb, type: 3}
       propertyPath: GlobalObjectIdHash
       value: 148391963

@@ -1,22 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using Unity.VisualScripting;
 using UnityEngine;
+using Unity.BossRoom.Infrastructure;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : NetworkBehaviour
 {
     [SerializeField] private GameObject _projectilePrefab;
     [SerializeField] private Transform _firePoint;
 
-    public float fireRate = 1f;
+    public float fireRate = 3f;
     public float projectileSpeed = 10f;
 
     private Transform target;
-    private bool canShoot=false;
+
+    private List<GameObject> _enemiesOnRadar;
+
+    private bool _isShooting;
     // Start is called before the first frame update
     void Start()
     {
-        
+        _isShooting = false;
+        _enemiesOnRadar = new List<GameObject>();
     }
 
     // Update is called once per frame
@@ -27,31 +33,53 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other){
         if(other.CompareTag("Enemy")){
-            target = other.transform;
-            StartCoroutine(ShootRoutine());
+            //Debug.Log("trigger shoot");
+            _enemiesOnRadar.Add(other.gameObject);
+            //target = _enemiesOnRadar[0].transform;
+
+            if(!_isShooting){
+                StartCoroutine("ShootRoutine");
+            }
+            
+
         }
     }
 
     void OnTriggerExit2D(Collider2D other){
         if(other.CompareTag("Enemy")){
-            target = null;
+            _enemiesOnRadar.Remove(other.gameObject);
+
+            if(_enemiesOnRadar.Count == 0){
+                StopCoroutine("ShootRoutine");
+                target = null;
+                _isShooting = false;
+            }
+            
+            
         }
     }
 
     IEnumerator ShootRoutine()
     {
-        while (target != null) // Enquanto houver um inimigo no radar
+        //Debug.Log("shooting routine");
+        _isShooting = true;
+        while (_enemiesOnRadar.Count >0) // Enquanto houver um inimigo no radar
         {
-            Shoot();
-            yield return new WaitForSeconds(1f / fireRate); // Tempo entre os tiros
+            target = _enemiesOnRadar[0].transform;
+            ShootServerRpc();
+            yield return new WaitForSeconds(1/fireRate); // Tempo entre os tiros
         }
     }
-    void Shoot()
+
+    [ServerRpc]
+    void ShootServerRpc()
     {
-        if (_projectilePrefab != null && _firePoint != null)
+        if (_projectilePrefab != null && _firePoint != null && target!=null)
         {
-            GameObject projectile = Instantiate(_projectilePrefab, _firePoint.position, Quaternion.identity);
-            Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
+            NetworkObject bullet = NetworkObjectPool.Singleton.GetNetworkObject(_projectilePrefab, _firePoint.position, transform.rotation);
+            bullet.Spawn();
+            // GameObject projectile = Instantiate(_projectilePrefab, _firePoint.position, Quaternion.identity);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             
             if (rb != null)
             {
