@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
+using Unity.VisualScripting;
 
 public class EnemyController : NetworkBehaviour
 {
@@ -12,8 +13,11 @@ public class EnemyController : NetworkBehaviour
     private float _speed;
     private int _waypointIndex;
 
+    private int _currentLife;
+
     void OnEnable()
     {
+        _currentLife = _enemyStatsSO.health;
         _speed = _enemyStatsSO.speed;
         _route = GameObject.FindGameObjectWithTag("Route").transform;
 
@@ -32,7 +36,7 @@ public class EnemyController : NetworkBehaviour
     void Update()
     {
         if (!IsServer) return;
-            
+
         SetTargetPos();
         transform.position = Vector3.MoveTowards(transform.position, _targetPos.position, _speed * Time.deltaTime);
     }
@@ -48,6 +52,26 @@ public class EnemyController : NetworkBehaviour
             }
             else
             {
+                NetworkObject.Despawn();
+            }
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Bullet")
+        {
+            Debug.Log("colidiu");
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Bullet"){
+            Debug.Log("life: "+ _currentLife);
+            int test = collision.GetComponent<BulletController>().GetBulletDamage();
+            _currentLife -= test;
+            if(_currentLife <=0){
                 NetworkObject.Despawn();
             }
         }

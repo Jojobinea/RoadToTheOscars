@@ -108,9 +108,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_FernandaMontengro
       objectReference: {fileID: 0}
+    - target: {fileID: 6102427574173726964, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6274510416006520364, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
       propertyPath: GlobalObjectIdHash
-      value: 4015668808
+      value: 3862984205
       objectReference: {fileID: 0}
     - target: {fileID: 8468200695751156802, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
       propertyPath: m_Size.x

@@ -92,9 +92,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_FernandaTorres
       objectReference: {fileID: 0}
+    - target: {fileID: 6102427574173726964, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6274510416006520364, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
       propertyPath: GlobalObjectIdHash
-      value: 3753391920
+      value: 1089548361
       objectReference: {fileID: 0}
     - target: {fileID: 8468200695751156802, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
       propertyPath: m_Size.x

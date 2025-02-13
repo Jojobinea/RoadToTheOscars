@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 772208510822242506, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
+      propertyPath: fireRate
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1440982798184825237, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -104,9 +108,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_WalterSalles
       objectReference: {fileID: 0}
+    - target: {fileID: 6102427574173726964, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6274510416006520364, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
       propertyPath: GlobalObjectIdHash
-      value: 1475247091
+      value: 1460891124
       objectReference: {fileID: 0}
     - target: {fileID: 8468200695751156802, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
       propertyPath: m_Size.x

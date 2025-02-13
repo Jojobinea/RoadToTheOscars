@@ -10,8 +10,7 @@ public class PlayerController : NetworkBehaviour
     [SerializeField] private GameObject _projectilePrefab;
     [SerializeField] private Transform _firePoint;
 
-    public float fireRate = 3f;
-    public float projectileSpeed = 10f;
+    public float fireRate;
 
     private Transform target;
 
@@ -67,7 +66,7 @@ public class PlayerController : NetworkBehaviour
         {
             target = _enemiesOnRadar[0].transform;
             ShootServerRpc();
-            yield return new WaitForSeconds(1/fireRate); // Tempo entre os tiros
+            yield return new WaitForSeconds(fireRate); // Tempo entre os tiros
         }
     }
 
@@ -78,15 +77,16 @@ public class PlayerController : NetworkBehaviour
         {
             NetworkObject bullet = NetworkObjectPool.Singleton.GetNetworkObject(_projectilePrefab, _firePoint.position, transform.rotation);
             bullet.Spawn();
+            bullet.GetComponent<BulletController>().SendBullet(target.position);
             // GameObject projectile = Instantiate(_projectilePrefab, _firePoint.position, Quaternion.identity);
-            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            // Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             
-            if (rb != null)
-            {
-                Vector2 direction = (target.position - _firePoint.position).normalized;
+            // if (rb != null)
+            // {
+            //     Vector2 direction = (target.position - _firePoint.position).normalized;
                 
-                rb.velocity = direction * projectileSpeed; // Atira na direção do inimigo
-            }
+            //     rb.velocity = direction * projectileSpeed; // Atira na direção do inimigo
+            // }
         }
     }
 
