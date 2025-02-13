@@ -70,7 +70,7 @@ public class PlayerController : NetworkBehaviour
         }
     }
 
-    [ServerRpc]
+    [ServerRpc (RequireOwnership = false)]
     void ShootServerRpc()
     {
         if (_projectilePrefab != null && _firePoint != null && target!=null)

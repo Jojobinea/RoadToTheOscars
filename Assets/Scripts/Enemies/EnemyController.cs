@@ -52,6 +52,7 @@ public class EnemyController : NetworkBehaviour
             }
             else
             {
+                EventManager.OnEnemyReachedOscarTrigger();
                 NetworkObject.Despawn();
             }
         }

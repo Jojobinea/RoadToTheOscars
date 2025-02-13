@@ -1,0 +1,350 @@
+fileFormatVersion: 2
+guid: c11bb2d60a43ce14799549bcde9975d9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OscarCrumbling_SpriteSheet_446x821_0
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1642
+        width: 299
+        height: 821
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11aa4efcd819ab4b99f87c7570e63f6
+      internalID: 160094874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OscarCrumbling_SpriteSheet_446x821_1
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1642
+        width: 295
+        height: 821
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5fd667a9582d7468864c7e0e5d05f4
+      internalID: -657718156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OscarCrumbling_SpriteSheet_446x821_2
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1642
+        width: 296
+        height: 821
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe81ff2c09802845a0b259b4e58001e
+      internalID: -364254214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OscarCrumbling_SpriteSheet_446x821_18
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 823
+        width: 294
+        height: 780
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edbe5903b2e6921428e53927801caa96
+      internalID: -688064889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OscarCrumbling_SpriteSheet_446x821_19
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 823
+        width: 306
+        height: 694
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a114ded06109d95428d361b53074fc9c
+      internalID: 1354403709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OscarCrumbling_SpriteSheet_446x821_21
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 823
+        width: 314
+        height: 591
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9ffe8b3ef00cc4aaa627caadc0dab6
+      internalID: 73690912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OscarCrumbling_SpriteSheet_446x821_29
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 0
+        width: 294
+        height: 264
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef131c032d18a5f48a52999b822fc1ec
+      internalID: 220412596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OscarCrumbling_SpriteSheet_446x821_32
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 0
+        width: 294
+        height: 516
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8906ab057b7099f49a4fe090fa414cf5
+      internalID: 409653581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OscarCrumbling_SpriteSheet_446x821_33
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 0
+        width: 296
+        height: 216
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb2816a32eece7429e1fc3b0e892c52
+      internalID: 1872672716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      OscarCrumbling_SpriteSheet_446x821_0: 160094874
+      OscarCrumbling_SpriteSheet_446x821_1: -657718156
+      OscarCrumbling_SpriteSheet_446x821_10: 597846036
+      OscarCrumbling_SpriteSheet_446x821_11: 1965534634
+      OscarCrumbling_SpriteSheet_446x821_12: -1181100889
+      OscarCrumbling_SpriteSheet_446x821_13: -1935117266
+      OscarCrumbling_SpriteSheet_446x821_14: -1887429636
+      OscarCrumbling_SpriteSheet_446x821_15: 1756162810
+      OscarCrumbling_SpriteSheet_446x821_16: 851830191
+      OscarCrumbling_SpriteSheet_446x821_17: -979032901
+      OscarCrumbling_SpriteSheet_446x821_18: -688064889
+      OscarCrumbling_SpriteSheet_446x821_19: 1354403709
+      OscarCrumbling_SpriteSheet_446x821_2: -364254214
+      OscarCrumbling_SpriteSheet_446x821_20: -569141520
+      OscarCrumbling_SpriteSheet_446x821_21: 73690912
+      OscarCrumbling_SpriteSheet_446x821_22: -318077882
+      OscarCrumbling_SpriteSheet_446x821_23: 1178042502
+      OscarCrumbling_SpriteSheet_446x821_24: 29666683
+      OscarCrumbling_SpriteSheet_446x821_25: 1114179290
+      OscarCrumbling_SpriteSheet_446x821_26: -558380863
+      OscarCrumbling_SpriteSheet_446x821_27: -153500419
+      OscarCrumbling_SpriteSheet_446x821_28: -1122705917
+      OscarCrumbling_SpriteSheet_446x821_29: 220412596
+      OscarCrumbling_SpriteSheet_446x821_3: -1097512211
+      OscarCrumbling_SpriteSheet_446x821_30: 1629759447
+      OscarCrumbling_SpriteSheet_446x821_31: -1977379759
+      OscarCrumbling_SpriteSheet_446x821_32: 409653581
+      OscarCrumbling_SpriteSheet_446x821_33: 1872672716
+      OscarCrumbling_SpriteSheet_446x821_4: 417289528
+      OscarCrumbling_SpriteSheet_446x821_5: -1747402103
+      OscarCrumbling_SpriteSheet_446x821_6: -1813623293
+      OscarCrumbling_SpriteSheet_446x821_7: 1450789588
+      OscarCrumbling_SpriteSheet_446x821_8: 1056366124
+      OscarCrumbling_SpriteSheet_446x821_9: -604516501
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

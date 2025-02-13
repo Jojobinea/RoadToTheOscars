@@ -4,7 +4,7 @@ using Unity.Netcode;
 using Unity.VisualScripting;
 using UnityEngine;
 using Unity.BossRoom.Infrastructure;
-
+using UnityEngine.EventSystems;
 public class TroopSpawnerController : NetworkBehaviour
 {
     public List<GameObject> actors; //list of towers (prefabs) that will instantiate
@@ -49,6 +49,7 @@ public class TroopSpawnerController : NetworkBehaviour
         //Detect when mouse is clicked (first touch clicked)
         if (Input.GetMouseButtonDown(0))
         {
+            if (EventSystem.current.IsPointerOverGameObject()) return;
             //Debug.Log("test");
             //get the world space postion of the mouse
             var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
