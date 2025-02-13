@@ -16,17 +16,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Elphaba
       objectReference: {fileID: 0}
+    - target: {fileID: 5793168209448824383, guid: 67ac742e4726057479d373a9bb19a38d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.23654282
+      objectReference: {fileID: 0}
+    - target: {fileID: 5793168209448824383, guid: 67ac742e4726057479d373a9bb19a38d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.23654282
+      objectReference: {fileID: 0}
+    - target: {fileID: 5793168209448824383, guid: 67ac742e4726057479d373a9bb19a38d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.23654282
+      objectReference: {fileID: 0}
+    - target: {fileID: 6960688251874455639, guid: 67ac742e4726057479d373a9bb19a38d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d541ce2f43300e648b9db52bbc8f1f17, type: 3}
     - target: {fileID: 6960688251874455639, guid: 67ac742e4726057479d373a9bb19a38d, type: 3}
       propertyPath: m_Color.b
-      value: 0.2859081
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6960688251874455639, guid: 67ac742e4726057479d373a9bb19a38d, type: 3}
       propertyPath: m_Color.g
-      value: 0.8792453
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6960688251874455639, guid: 67ac742e4726057479d373a9bb19a38d, type: 3}
       propertyPath: m_Color.r
-      value: 0.23059444
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7926499512065098898, guid: 67ac742e4726057479d373a9bb19a38d, type: 3}
       propertyPath: GlobalObjectIdHash

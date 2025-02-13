@@ -48,17 +48,61 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2919045988283093950, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.19378062
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919045988283093950, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.19378062
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919045988283093950, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.19378062
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029460828445025106, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
+      propertyPath: m_Size.x
+      value: 5.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029460828445025106, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
+      propertyPath: m_Size.y
+      value: 5.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029460828445025106, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bce7521abe9b20f44a406c77dd72308e, type: 3}
+    - target: {fileID: 3029460828445025106, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3515311038045278710, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bce7521abe9b20f44a406c77dd72308e, type: 3}
     - target: {fileID: 3515311038045278710, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
       propertyPath: m_Color.b
-      value: 0.8867924
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3515311038045278710, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
       propertyPath: m_Color.g
-      value: 0.8487857
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3515311038045278710, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
       propertyPath: m_Color.r
-      value: 0.1991099
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366211772856050851, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.16846517
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366211772856050851, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.16846517
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366211772856050851, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.16846517
       objectReference: {fileID: 0}
     - target: {fileID: 6102427574173726964, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
       propertyPath: m_Name
@@ -66,7 +110,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6274510416006520364, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
       propertyPath: GlobalObjectIdHash
-      value: 3862984205
+      value: 4015668808
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468200695751156802, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
+      propertyPath: m_Size.x
+      value: 5.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468200695751156802, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
+      propertyPath: m_Size.y
+      value: 5.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468200695751156802, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bce7521abe9b20f44a406c77dd72308e, type: 3}
+    - target: {fileID: 8468200695751156802, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
