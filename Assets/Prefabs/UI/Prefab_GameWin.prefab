@@ -140,7 +140,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sair da sala
+  m_text: 'Exit
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ea47d8303df2ff94c94d6ceb6af92a15, type: 2}
   m_sharedMaterial: {fileID: 8140409663267540726, guid: ea47d8303df2ff94c94d6ceb6af92a15, type: 2}

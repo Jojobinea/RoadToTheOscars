@@ -21,17 +21,12 @@ public class SpawnManager : NetworkBehaviour
         EventManager.onEnemyDeathEvent += CheckLastWaveEnemies;
     }
 
-    private void OnNetworkDespawn()
+    private void OnDestroy()
     {
         NetworkManager.Singleton.OnServerStarted -= CallEnemySpawn;
         EventManager.onEnemyDeathEvent -= CheckLastWaveEnemies;
     }
 
-    private void Update()
-    {
-        if(!_isOnLastWave) return;
-
-    }
 
     private void CallEnemySpawn()
     {

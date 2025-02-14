@@ -17,8 +17,16 @@ public class ConnectionManager : MonoBehaviour
         EventManager.onCloseRoomEvent += CloseRoom;
 
         //Autenrticação no Unity Services
-        await UnityServices.InitializeAsync();
 
+        if (UnityServices.State == ServicesInitializationState.Initialized)
+        {
+            Debug.Log("aaaauuu");
+
+            AuthenticationService.Instance.SignOut();
+        }
+
+        await UnityServices.InitializeAsync();
+        
         AuthenticationService.Instance.SignedIn += () =>
         {
             Debug.Log("Connected " + AuthenticationService.Instance.PlayerId);
@@ -36,6 +44,8 @@ public class ConnectionManager : MonoBehaviour
 
     private async void CreateRelay()
     {
+        Debug.Log("creating reelay");
+        
         Allocation allocation = await RelayService.Instance.CreateAllocationAsync(1);
         string joinCode = await RelayService.Instance.GetJoinCodeAsync(allocation.AllocationId);
         Debug.Log(joinCode);
@@ -74,15 +84,21 @@ public class ConnectionManager : MonoBehaviour
         }
     }
 
-    private async void CloseRoom()
+    private void CloseRoom()
     {
+        AuthenticationService.Instance.SignOut();
+        NetworkManager.Singleton.Shutdown();
+
+        /*
         if (NetworkManager.Singleton.IsHost)
         {
             Debug.Log("Closing room...");
-            
+
             // Stop the host
-            AuthenticationService.Instance.SignOut();
             NetworkManager.Singleton.Shutdown();
+            _unityTransport.enabled = false;
+            _unityTransport.enabled = true;
         }
+        */
     }
 }

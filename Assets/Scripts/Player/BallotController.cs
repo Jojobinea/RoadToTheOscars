@@ -20,11 +20,15 @@ public class BallotController : NetworkBehaviour
         EventManager.onWalterSalesEvent += WalterSalesEffectClientRpc;
     }
 
-    private void OnDestroy()
+    public override void OnNetworkDespawn()
     {
+        base.OnNetworkDespawn();
         NetworkManager.OnServerStarted -= InitializeBallot;
         NetworkManager.OnClientStarted -= InitializeBallot;
+    }
 
+    private void OnDestroy()
+    {
         EventManager.onTroopBoughtEvent -= AddToBallotCount;
         EventManager.onWalterSalesEvent -= WalterSalesEffectClientRpc;
     }

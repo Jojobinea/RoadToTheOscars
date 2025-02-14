@@ -448,6 +448,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3201730782450719733, guid: a32f0f84faec9e541a5892f36d1b0cbc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5013375612766641588}
+    - target: {fileID: 3201730782450719733, guid: a32f0f84faec9e541a5892f36d1b0cbc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BackTeMenuButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3201730782450719733, guid: a32f0f84faec9e541a5892f36d1b0cbc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameplayCanvas, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3201730782450719733, guid: a32f0f84faec9e541a5892f36d1b0cbc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7639939679798976209, guid: a32f0f84faec9e541a5892f36d1b0cbc, type: 3}
       propertyPath: m_Name
       value: Prefab_GameOverPanel

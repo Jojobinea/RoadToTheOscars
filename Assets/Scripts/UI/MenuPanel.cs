@@ -14,7 +14,7 @@ public class MenuPanel : MonoBehaviour
         EventManager.onHideMenuEvent += HideMenu;
     }
 
-    private void Oestroy()
+    private void OnDestroy()
     {
         EventManager.onHideMenuEvent -= HideMenu;
     }

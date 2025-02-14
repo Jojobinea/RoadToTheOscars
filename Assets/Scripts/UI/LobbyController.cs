@@ -14,7 +14,7 @@ public class LobbyController : NetworkBehaviour
 
     private NetworkVariable<int> readyCount = new NetworkVariable<int>(0);
     private int totalPlayers;
-    private int _maxPlayers = 2;
+    private int _maxPlayers = 1;
     private HashSet<ulong> readyPlayers = new HashSet<ulong>();
 
     private void Awake()
@@ -48,7 +48,6 @@ public class LobbyController : NetworkBehaviour
 
     public override void OnNetworkDespawn()
     {
-        base.OnNetworkDespawn();
         if (IsServer)
         {
             NetworkManager.Singleton.OnClientConnectedCallback -= OnClientConnected;
@@ -57,6 +56,8 @@ public class LobbyController : NetworkBehaviour
         }
 
         readyCount.OnValueChanged -= UpdateReadyText;
+
+        base.OnNetworkDespawn();
     }
 
     private void OnClientConnected(ulong clientId)
@@ -91,7 +92,7 @@ public class LobbyController : NetworkBehaviour
             Debug.Log("ready players = " + readyCount);
         }
 
-        if (readyCount.Value == 1)
+        if (readyCount.Value == _maxPlayers)
         {
             StartGameClientRpc();
         }
