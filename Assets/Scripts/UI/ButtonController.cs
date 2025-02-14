@@ -6,6 +6,10 @@ public class ButtonController : MonoBehaviour
     [SerializeField] private VotosSO _votosSO;
     [SerializeField] private int _troopValue;
     [SerializeField] private Button _button;
+
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioClip _audioClip;
+    
     private Button btn;
     private Image img;
     public Color pressedColor = Color.red;  // Cor ao pressionar
@@ -34,7 +38,8 @@ public class ButtonController : MonoBehaviour
 
     void ChangeColor()
     {
-        img.color = pressedColor; // Muda a cor quando clicado
+        img.color = pressedColor;
+        _audioSource.PlayOneShot(_audioClip);
         Invoke("ResetColor", 0.1f); // Volta à cor original após 0.5s
         EventManager.OnTroopBoughtTrigger(_troopValue);
     }

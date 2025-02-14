@@ -11,6 +11,9 @@ public class LobbyController : NetworkBehaviour
     [SerializeField] private TMP_Text statusText;
     [SerializeField] private TMP_Text _playerQuant;
     [SerializeField] private TMP_Text _roomCode;
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioClip _audioClip;
+    
 
     private NetworkVariable<int> readyCount = new NetworkVariable<int>(0);
     private int totalPlayers;
@@ -78,8 +81,10 @@ public class LobbyController : NetworkBehaviour
 
     public void ReadyButton()
     {
-        if(IsClient)
+        if(IsClient){
+            _audioSource.PlayOneShot(_audioClip);
             SetPlayerReadyServerRpc(NetworkManager.Singleton.LocalClientId);
+        }
     }
 
     [ServerRpc(RequireOwnership = false)]

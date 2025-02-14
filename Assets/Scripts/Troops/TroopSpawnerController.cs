@@ -12,6 +12,9 @@ public class TroopSpawnerController : NetworkBehaviour
     int spawnID = -1; //id of tower to spawn
     private PolygonCollider2D _routeCollider;
 
+    [SerializeField] private AudioSource _audioSource;
+    public List<AudioClip> audioClips;
+
     private void Start()
     {
         EventManager.onSpawnTroopEvent += SelectTower;
@@ -74,7 +77,8 @@ public class TroopSpawnerController : NetworkBehaviour
         {
             NetworkObject actor = NetworkObjectPool.Singleton.GetNetworkObject(actors[spawnID], test, Quaternion.identity);
             actor.Spawn();
-
+            PlaySoundServerRpc(spawnID);
+            
             //actor.transform.position = test;
             DeselectTowers();
         }
@@ -96,12 +100,31 @@ public class TroopSpawnerController : NetworkBehaviour
         {
             NetworkObject actor = NetworkObjectPool.Singleton.GetNetworkObject(actors[spawnId], test, Quaternion.identity);
             actor.SpawnWithOwnership(clientId); // Assign ownership to the client
+            PlaySoundServerRpc(spawnID);
+            
 
             //actor.transform.position = test;
         }
         else
         {
             //Debug.Log("proibido spawnar");
+        }
+        
+    }
+
+     [ServerRpc(RequireOwnership = false)]
+    private void PlaySoundServerRpc(int spawnID)
+    {
+        Debug.Log("teste"+ spawnID);
+        PlaySoundClientRpc(spawnID);
+    }
+
+    [ClientRpc]
+    private void PlaySoundClientRpc(int spawnId)
+    {
+        if (_audioSource != null)
+        {
+            _audioSource.PlayOneShot(audioClips[spawnID]);
         }
     }
 

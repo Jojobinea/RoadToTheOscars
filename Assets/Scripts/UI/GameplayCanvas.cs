@@ -12,6 +12,13 @@ public class GameplayCanvas : NetworkBehaviour
     [SerializeField] private Image[] _miniOscars;
     [SerializeField] private Image[] _wonOscars;
     [SerializeField] private Sprite _lostOscarSprte;
+
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioClip _winClip;
+    [SerializeField] private AudioClip _gameoverClip;
+
+    [SerializeField] private AudioClip _oscarCrumblingClip;
+    [SerializeField] private AudioClip _buttonClip;
     private int _miniOscarIndex = 0;
 
     private void Start()
@@ -36,6 +43,7 @@ public class GameplayCanvas : NetworkBehaviour
     [ClientRpc]
     private void EnableGameOverScreenClientRpc()
     {
+        _audioSource.PlayOneShot(_gameoverClip);
         _gameOverScreen.SetActive(true);
         Time.timeScale = 0;
     }
@@ -43,6 +51,7 @@ public class GameplayCanvas : NetworkBehaviour
     [ClientRpc]
     private void EnableGameWinScreenClientRpc()
     {
+        _audioSource.PlayOneShot(_winClip);
         _gameWinScreen.SetActive(true);
         Time.timeScale = 0;
     }
@@ -50,6 +59,8 @@ public class GameplayCanvas : NetworkBehaviour
     [ClientRpc]
     private void LostOscarClientRpc()
     {
+        
+        _audioSource.PlayOneShot(_oscarCrumblingClip);
         _miniOscars[_miniOscarIndex].sprite = _lostOscarSprte;
         _wonOscars[_miniOscarIndex].sprite = _lostOscarSprte;
         _miniOscarIndex += 1;
@@ -57,6 +68,7 @@ public class GameplayCanvas : NetworkBehaviour
 
     public void BackTeMenuButton()
     {
+         _audioSource.PlayOneShot(_buttonClip);
         SceneManager.LoadScene("SampleScene");
     }
 }
