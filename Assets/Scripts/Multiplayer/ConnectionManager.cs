@@ -81,6 +81,7 @@ public class ConnectionManager : MonoBehaviour
             Debug.Log("Closing room...");
             
             // Stop the host
+            AuthenticationService.Instance.SignOut();
             NetworkManager.Singleton.Shutdown();
         }
     }

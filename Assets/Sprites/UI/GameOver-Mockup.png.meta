@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8b8de10cb9d275a43914a143f0f63003
+guid: ac4f71e2d4da3eb4482adee1f4b3ce15
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: GameOver-Mockup_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 424
+        width: 712
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2fe3211f8d8a954d8f7fd7a7d6212cd
+      internalID: 1709168319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GameOver-Mockup_0: 1709168319
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
