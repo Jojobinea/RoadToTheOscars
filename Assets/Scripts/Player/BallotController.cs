@@ -10,7 +10,6 @@ public class BallotController : NetworkBehaviour
     [SerializeField] private float _ballotTimer;
     [SerializeField] private int _ballotToAddByTime;
     [SerializeField] private TMP_Text _txt;
-    private NetworkVariable<int> _networkBallotCount = new NetworkVariable<int>();
 
     private void Start()
     {
@@ -18,6 +17,7 @@ public class BallotController : NetworkBehaviour
         NetworkManager.OnClientStarted += InitializeBallot;
 
         EventManager.onTroopBoughtEvent += AddToBallotCount;
+        EventManager.onWalterSalesEvent += WalterSalesEffectClientRpc;
     }
 
     private void OnDestroy()
@@ -26,18 +26,14 @@ public class BallotController : NetworkBehaviour
         NetworkManager.OnClientStarted -= InitializeBallot;
 
         EventManager.onTroopBoughtEvent -= AddToBallotCount;
+        EventManager.onWalterSalesEvent -= WalterSalesEffectClientRpc;
     }
 
     private void InitializeBallot()
     {
-        if(!IsOwner) return;
-
         _ballot.quantVotos = 0;
-        if(_networkBallotCount.Value != _ballot.quantVotos)
-        {
-            _networkBallotCount.Value = _ballot.quantVotos;
-        }
-        _txt.text = _networkBallotCount.Value.ToString();
+
+        _txt.text = _ballot.quantVotos.ToString();
 
         StartBallotCoroutine();
     }
@@ -60,11 +56,14 @@ public class BallotController : NetworkBehaviour
     {
         _ballot.quantVotos += addAmount;
 
-        if(_networkBallotCount.Value != _ballot.quantVotos)
-        {
-            _networkBallotCount.Value = _ballot.quantVotos;
-        }
+        _txt.text = _ballot.quantVotos.ToString();
+    }
 
-        _txt.text = _networkBallotCount.Value.ToString();
+    [ClientRpc]
+    private void WalterSalesEffectClientRpc(int addAmount)
+    {
+        _ballot.quantVotos += addAmount;
+
+        _txt.text = _ballot.quantVotos.ToString();
     }
 }

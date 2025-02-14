@@ -522,6 +522,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_CanvasGameplay
       objectReference: {fileID: 0}
+    - target: {fileID: 3058660638053509275, guid: 6106d62e67378464eb34fb2f0e620e53, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 922326228
+      objectReference: {fileID: 0}
+    - target: {fileID: 3058660638053509275, guid: 6106d62e67378464eb34fb2f0e620e53, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 2787522322
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090380448563468012, guid: 6106d62e67378464eb34fb2f0e620e53, type: 3}
+      propertyPath: _ballotTimer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5624656289840033431, guid: 6106d62e67378464eb34fb2f0e620e53, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -797,6 +809,22 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 848024452}
+    - target: {fileID: 6889197669513942426, guid: 54175aa4e3cf6a943ac353ef7300ea16, type: 3}
+      propertyPath: _timeBetweenWaves
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6889197669513942426, guid: 54175aa4e3cf6a943ac353ef7300ea16, type: 3}
+      propertyPath: _waves.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6889197669513942426, guid: 54175aa4e3cf6a943ac353ef7300ea16, type: 3}
+      propertyPath: _timeBetweenEnemies
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6889197669513942426, guid: 54175aa4e3cf6a943ac353ef7300ea16, type: 3}
+      propertyPath: _waves.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: c544f5cf3c99d6e4189b6409778a9856, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -68,11 +68,15 @@ public class EnemyController : NetworkBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Bullet"){
+        if(collision.gameObject.tag == "Bullet")
+        {
             Debug.Log("life: "+ _currentLife);
             int test = collision.GetComponent<BulletController>().GetBulletDamage();
             _currentLife -= test;
-            if(_currentLife <=0){
+
+            if(_currentLife <=0)
+            {        
+                EventManager.OnEnemyDeathTrigger();
                 NetworkObject.Despawn();
             }
         }

@@ -12,15 +12,25 @@ public class SpawnManager : NetworkBehaviour
     [SerializeField] private float _timeBetweenWaves;
     [SerializeField] private float _timeBetweenEnemies;
     private GameObject _player;
+    private bool _isOnLastWave;
+    private int _lastEnemies;
 
     private void Start()
     {
         NetworkManager.Singleton.OnServerStarted += CallEnemySpawn;
+        EventManager.onEnemyDeathEvent += CheckLastWaveEnemies;
     }
 
     private void OnNetworkDespawn()
     {
         NetworkManager.Singleton.OnServerStarted -= CallEnemySpawn;
+        EventManager.onEnemyDeathEvent -= CheckLastWaveEnemies;
+    }
+
+    private void Update()
+    {
+        if(!_isOnLastWave) return;
+
     }
 
     private void CallEnemySpawn()
@@ -48,6 +58,12 @@ public class SpawnManager : NetworkBehaviour
         {
             NetworkObject enemy = NetworkObjectPool.Singleton.GetNetworkObject(_waves[waveIndex].enemyList[i], spawnPoint.position, Quaternion.identity);
             enemy.Spawn();
+
+            if(_isOnLastWave)
+            {
+                _lastEnemies += 1;
+            }
+
             yield return new WaitForSeconds(_timeBetweenEnemies);
         }
     }
@@ -60,12 +76,31 @@ public class SpawnManager : NetworkBehaviour
             {
                 StartCoroutine(WaveController(i));
             }
+            else if (i == _waves.Length - 1)
+            {
+                yield return new WaitForSeconds(_timeBetweenWaves);
+                _isOnLastWave = true;
+                StartCoroutine(WaveController(i));
+                Debug.Log("wave final");
+            }
             else
             {
                 yield return new WaitForSeconds(_timeBetweenWaves);
                 StartCoroutine(WaveController(i));
             }
-            
+        }
+    }
+
+    private void CheckLastWaveEnemies()
+    {
+        if(!_isOnLastWave) return;
+
+        _lastEnemies -= 1;
+
+        if(_lastEnemies <= 0)
+        {
+            EventManager.OnGameWinTrigger();
+            EventManager.OnCloseRoomTrigger();
         }
     }
 }
