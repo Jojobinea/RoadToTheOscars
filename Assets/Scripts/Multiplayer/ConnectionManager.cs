@@ -10,6 +10,7 @@ using TMPro;
 public class ConnectionManager : MonoBehaviour
 {   
     [SerializeField] private UnityTransport _unityTransport;
+    
     private async void Start()
     {
         EventManager.onCreateHostEvent += CreateRelay;
@@ -45,7 +46,7 @@ public class ConnectionManager : MonoBehaviour
     private async void CreateRelay()
     {
         Debug.Log("creating reelay");
-        
+
         Allocation allocation = await RelayService.Instance.CreateAllocationAsync(1);
         string joinCode = await RelayService.Instance.GetJoinCodeAsync(allocation.AllocationId);
         Debug.Log(joinCode);
@@ -100,5 +101,7 @@ public class ConnectionManager : MonoBehaviour
             _unityTransport.enabled = true;
         }
         */
+
+        Destroy(gameObject);
     }
 }

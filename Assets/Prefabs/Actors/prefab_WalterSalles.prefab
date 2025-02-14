@@ -5051,7 +5051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _votos: {fileID: 11400000, guid: fb11affe6109bc24c8241fa73470141b, type: 2}
   _interval: 3
-  _votosToAdd: 2
+  _votosToAdd: 5
   _particleSystem: {fileID: 8992408346821733520}
 --- !u!4 &7484639026734540487 stripped
 Transform:

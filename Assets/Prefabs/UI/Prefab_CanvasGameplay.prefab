@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 2948344728
+  GlobalObjectIdHash: 1180516473
   InScenePlacedSourceGlobalObjectIdHash: 2787522322
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -823,9 +823,17 @@ PrefabInstance:
       propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6797618944484587048, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      propertyPath: _ballotTimer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6828663662177028191, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
       propertyPath: GlobalObjectIdHash
-      value: 2948344728
+      value: 922326228
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828663662177028191, guid: 213625d360f96c14ba87bf9df1d89cb7, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 2787522322
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -90,9 +90,10 @@ public class SpawnManager : NetworkBehaviour
     {
         if(!_isOnLastWave) return;
 
-        _lastEnemies -= 1;
+        List<GameObject> enemies = new List<GameObject>(GameObject.FindGameObjectsWithTag("Enemy"));
+        Debug.Log("++" + enemies.Count);
 
-        if(_lastEnemies <= 0)
+        if(enemies.Count <= 1)
         {
             EventManager.OnGameWinTrigger();
             EventManager.OnCloseRoomTrigger();

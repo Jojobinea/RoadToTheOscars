@@ -1160,7 +1160,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1835791735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1429,7 +1429,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3090380448563468012, guid: 6106d62e67378464eb34fb2f0e620e53, type: 3}
       propertyPath: _ballotTimer
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3447119278175966266, guid: 6106d62e67378464eb34fb2f0e620e53, type: 3}
       propertyPath: _audioClip
@@ -1910,11 +1910,11 @@ PrefabInstance:
       objectReference: {fileID: 848024452}
     - target: {fileID: 6889197669513942426, guid: 54175aa4e3cf6a943ac353ef7300ea16, type: 3}
       propertyPath: _timeBetweenWaves
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6889197669513942426, guid: 54175aa4e3cf6a943ac353ef7300ea16, type: 3}
       propertyPath: _waves.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6889197669513942426, guid: 54175aa4e3cf6a943ac353ef7300ea16, type: 3}
       propertyPath: _timeBetweenEnemies
@@ -1923,7 +1923,11 @@ PrefabInstance:
     - target: {fileID: 6889197669513942426, guid: 54175aa4e3cf6a943ac353ef7300ea16, type: 3}
       propertyPath: _waves.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: c544f5cf3c99d6e4189b6409778a9856, type: 2}
+      objectReference: {fileID: 11400000, guid: 334dc96d713fb844181b2f2e10c9d894, type: 2}
+    - target: {fileID: 6889197669513942426, guid: 54175aa4e3cf6a943ac353ef7300ea16, type: 3}
+      propertyPath: _waves.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: d43731226b1482943a58b0c89190d2fa, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

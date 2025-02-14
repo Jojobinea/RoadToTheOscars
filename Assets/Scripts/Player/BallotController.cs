@@ -13,7 +13,7 @@ public class BallotController : NetworkBehaviour
 
     private void Start()
     {
-        NetworkManager.OnServerStarted += InitializeBallot;
+        //NetworkManager.OnServerStarted += InitializeBallot;
         NetworkManager.OnClientStarted += InitializeBallot;
 
         EventManager.onTroopBoughtEvent += AddToBallotCount;
@@ -23,7 +23,7 @@ public class BallotController : NetworkBehaviour
     public override void OnNetworkDespawn()
     {
         base.OnNetworkDespawn();
-        NetworkManager.OnServerStarted -= InitializeBallot;
+        //NetworkManager.OnServerStarted -= InitializeBallot;
         NetworkManager.OnClientStarted -= InitializeBallot;
     }
 

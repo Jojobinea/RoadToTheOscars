@@ -94,7 +94,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 772208510822242506, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
       propertyPath: fireRate
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 772208510822242506, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
       propertyPath: _firePoint
@@ -210,7 +210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6274510416006520364, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
       propertyPath: GlobalObjectIdHash
-      value: 688112377
+      value: 2839929790
       objectReference: {fileID: 0}
     - target: {fileID: 8468200695751156802, guid: c807067ab2c5db14696f7b612f0458b0, type: 3}
       propertyPath: m_Size.x

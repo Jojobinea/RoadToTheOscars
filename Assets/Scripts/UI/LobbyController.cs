@@ -17,7 +17,7 @@ public class LobbyController : NetworkBehaviour
 
     private NetworkVariable<int> readyCount = new NetworkVariable<int>(0);
     private int totalPlayers;
-    private int _maxPlayers = 1;
+    private int _maxPlayers = 2;
     private HashSet<ulong> readyPlayers = new HashSet<ulong>();
 
     private void Awake()

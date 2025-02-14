@@ -68,6 +68,7 @@ public class TroopSpawnerController : NetworkBehaviour
         {
             // If this is a client, request the server to spawn
             SpawnTowerServerRpc(position, spawnID, OwnerClientId);
+            DeselectTowers();
             return;
         }
 
